@@ -1,7 +1,7 @@
 # lagrangian_hamiltonian_tool
 calculates lagrangian and hamiltonian in generalized coordinates
 
-## Lagrangian Hamiltonian Solver
+## lagrangian_hamiltonian_solver
 
 A Python command-line tool for symbolic calculations in analytical mechanics.
 This package can derive:
