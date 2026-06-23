@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name ="lagrangian-hamiltonian-tool"
+version = "1.0.0"
+dependencies = [
+  "numpy",
+  "sympy" 
+]
+requires-python = ">=3.8"
+authors = [
+ { name = "S.B." }
+]
+description = "This script calculates the Lagrangian, Hamiltonian and Lagrangian equation in generalised coordinates"
+keywords = ["classical mechanics", "lagrangian", "hamiltonian", "generalised coordinate" ]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+[project.scripts]
+lagrangian_hamiltonian_solver ="lagrangian_hamiltonian_solver.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lagrangian_hamiltonian_solver"]
